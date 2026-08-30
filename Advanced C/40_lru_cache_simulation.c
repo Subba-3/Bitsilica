@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(){int cache[5],n,i,j,key,found;printf("Enter 5 cache values: ");for(i=0;i<5;i++)scanf("%d",&cache[i]);printf("Enter key: ");scanf("%d",&key);found=-1;for(i=0;i<5;i++)if(cache[i]==key)found=i;if(found>=0){for(j=found;j>0;j--)cache[j]=cache[j-1];cache[0]=key;printf("Key found and moved to front");}else printf("Key not found");printf("\nCache: ");for(i=0;i<5;i++)printf("%d ",cache[i]);return 0;}
