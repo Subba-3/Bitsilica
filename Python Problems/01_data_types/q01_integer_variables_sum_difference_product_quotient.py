@@ -1,0 +1,10 @@
+# Question 1
+# Assign two integer variables and print their sum, difference, product, and quotient.
+
+a = 10
+b = 5
+
+print("Sum:", a + b)
+print("Difference:", a - b)
+print("Product:", a * b)
+print("Quotient:", a / b)
